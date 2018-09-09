@@ -1,0 +1,80 @@
+Nana San
+<address>
+        3601 Jamboree Rd<br/>Newport Beach, CA 92660
+    </address>
+
+            (949) 474-7373
+        
+
+SOL Mexican Cocina
+<address>
+        251 E Coast Hwy<br/>Newport Beach, CA 92660
+    </address>
+
+            (949) 675-9800
+        
+
+Sessions West Coast Deli
+<address>
+        2823 Newport Blvd<br/>Newport Beach, CA 92663
+    </address>
+
+            (949) 220-9001
+        
+
+San Shi Go
+<address>
+        205 Main St<br/>Newport Beach, CA 92661
+    </address>
+
+            (949) 673-3724
+        
+
+Pandor Artisan Boulangerie & Cafe
+<address>
+        1126 Irvine Ave<br/>Newport Beach, CA 92660
+    </address>
+
+            (949) 209-5099
+        
+
+Red O
+<address>
+        143 Newport Center Dr<br/>Newport Beach, CA 92660
+    </address>
+
+            (949) 718-0300
+        
+
+Plums Café and Catering
+<address>
+        369 E 17th St<br/>Costa Mesa, CA 92627
+    </address>
+
+            (949) 722-7586
+        
+
+R+D Kitchen
+<address>
+        555 Newport Ctr Dr<br/>Newport Beach, CA 92660
+    </address>
+
+            (949) 219-0555
+        
+
+Cucina Alessa
+<address>
+        6700 W Coast Hwy<br/>Newport Beach, CA 92663
+    </address>
+
+            (949) 645-2148
+        
+
+Bear Flag Fish
+<address>
+        3421 Via Lido<br/>Newport Beach, CA 92663
+    </address>
+
+            (949) 673-3474
+        
+

@@ -1,0 +1,22 @@
+Para hacer el Upgrade de Pycharm:
+
+https://www.jetbrains.com/help/pycharm/2016.3/installing-and-launching.html
+
+Download the <pycharm-professional or pycharm-community>-*.tar.gz file from the Download page.
+
+Unpack the <pycharm-professional or pycharm-community>-*.tar.gz file to a different folder, if your current "Download" folder doesn't support file execution:
+tar xfz <pycharm-professional or pycharm-community>-*.tar.gz <new_archive_folder>
+
+A new instance should not be extracted over the existing one! The target folder must be empty.
+
+The recommended install location according to the filesystem hierarchy standard (FHS) is /opt. For example, it's possible to enter the following command:
+sudo tar xf <pycharm-professional or pycharm-community>-*.tar.gz -C /opt/
+Switch to the bin directory:
+cd <new archive folder>/<pycharm-professional or pycharm-community>-*/bin
+For example,
+cd opt/<pycharm-professional or pycharm-community>-*/bin
+Run pycharm.sh from the bin subdirectory.
+
+ESTA PARTE FUE LA MAS IMPORTANTE!!!
+
+sudo bash filename.sh

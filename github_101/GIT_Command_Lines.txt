@@ -1,0 +1,76 @@
+# 1.- Primero hacer cambios al codigo en el Working Directory Local
+
+# 2.- Mostrar los cambios que hice en el codigo
+	git diff
+
+
+# 3.- Mostrar los archivos que estan pendientes de subir a "COMMIT LOCAL"
+	git status
+
+# 4.- Subir los archivos modificados a "COMMIT LOCAL"
+
+# Este sube todos los archivos modificados
+	git add .   
+
+# Este tambien sube todos los archivos modificados
+	git add -A
+
+# Este sube un solo archivo a la vez
+	git add File01.txt
+
+
+# 5.- Hacer Commit de los archivos modificados a "COMMIT LOCAL"
+	git commit -m "Detallar los cambios realizados"
+
+# 6.- Sincronizar los archivos con el Repo de Github
+
+	git pull origin master
+
+	git push origin master
+
+# 7.- Para crear Repositorio Local 
+	#Primero creamos una carpeta local en el equipo "Working Directory"
+
+	git init learning_python
+
+# 8.- Para crear "BRANCH"
+
+	git-branch [nombre_branch]
+
+# 9.- Para entrar a trabajar en el BRANCH
+
+	git-checkout [nombre_branch]
+
+# 10.- Para ver en que BRANCH o MASTER estoy trabajando
+
+	git-branch
+
+# 11.- Sincronizar por PRIMERA VEZ un branch
+
+	git-push -u origin [nombre_branch]
+
+
+# 12.- Visualizar todos los BRANCH (locales y remotos)
+
+	git-branch -a
+
+
+# 13.- Merge a Branch with Master
+
+	git checkout master
+	git branch --merged
+	git merge [nombre_branch]
+	git push origin master
+	
+	# y luego ejecutamos paso 14
+
+
+# 14.- Eliminar Branch
+
+	# Branch Remoto
+	git push origin --delete [nombre_branch]
+
+	# Branch Local
+	git branch -d [nombre_branch]
+
+
