@@ -1,5 +1,7 @@
 {
     "cSpell.words": [
         "isdigit"
-    ]
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
 }

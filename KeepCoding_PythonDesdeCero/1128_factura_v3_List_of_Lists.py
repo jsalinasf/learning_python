@@ -25,9 +25,9 @@ print('\n')
 indice = 0
 for item in listalineasFact:
     precioTotalItem = round(item[0] * item[1],2)
-    print('{} - ${} - ${}\n'.format(item[0],round(item[1],2),precioTotalItem))
+    print('{:2} - ${:7.2f} - ${:7.2f}\n'.format(item[0],round(item[1],2),precioTotalItem))
 
 print('-' * 50)
-print('Total: ${}'.format(round(precioTotal,2)))
+print('Total: ${:7.2f}'.format(round(precioTotal,2)))
 print('Unidades: {}'.format(totalItems))
 
