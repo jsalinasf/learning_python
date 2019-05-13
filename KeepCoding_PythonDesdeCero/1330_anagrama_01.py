@@ -1,4 +1,4 @@
-def isAnagram(word1, word2):
+def isAnagramBasic(word1, word2):
     if len(word1) != len (word2):
         return False
     
@@ -18,6 +18,10 @@ def isAnagram(word1, word2):
         return False
     return True
 
+def isAnagram(word1, word2):
+    # This solution is not very efficient but it works
+    return isAnagramBasic(word1,word2) and isAnagramBasic(word2, word1)
+
 print(isAnagram('amor','roma')) # True
 print(isAnagram('amir','roma')) # False
-print(isAnagram('amar','roma')) # It should return False but at this time this Test is not passing
+print(isAnagram('amar','roma')) # False
