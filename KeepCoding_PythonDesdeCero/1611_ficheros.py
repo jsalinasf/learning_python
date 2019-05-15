@@ -42,7 +42,12 @@ def main():
         precioTotal += precioE
         screen2.Print('${:7.2f}'.format(precioTotal), line=9, column=19, style='bold')
         edad = presentacion.pedirEdad()
-
+    
+    # Save File
+    fEntradas = open('transacciones.txt','a+')
+    transaccion = '{},{},{},{}\n'.format(numEntradas['bebe'],numEntradas['nino'],numEntradas['adulto'],numEntradas['jubilado'])
+    fEntradas.write(transaccion)
+    fEntradas.close()
     screen2.locate(11,1)
 
 main()
