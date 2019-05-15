@@ -59,8 +59,11 @@ def validaEdad(cadena):
 def pedirEdad():
     edad = screen.Input('Ingresar Edad: ',1,1)
     while validaEdad(edad) == False:
+        screen.Format(0,33,41)
         screen.Print('Edad Invalida',25,1)
+        screen.Reset()
         edad = screen.Input('Ingresar Edad: ',1,1)        
+    screen.clearLine(25)
     return int(edad)
 
 def printScreen():
@@ -68,7 +71,9 @@ def printScreen():
     screen.Print('Nino....:   -',5,5)
     screen.Print('Adulto..:   -',6,5)
     screen.Print('Jubilado:   -',7,5)
+    screen.Format(1)
     screen.Print('Total....:',9,8)
+    screen.Reset()
 
 # __main__
 screen.clearScreen()
@@ -87,7 +92,9 @@ while edad != 0:
     print('${:7.2f}'.format(precioE * numEntradas[tipoE]))
     precioTotal += precioE
     screen.locateCursor(9,19)
+    screen.Format(1)
     print('${:7.2f}'.format(precioTotal))
+    screen.Reset()
     edad = pedirEdad()
 
 screen.locateCursor(11,1)
