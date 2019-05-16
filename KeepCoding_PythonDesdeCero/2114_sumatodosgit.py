@@ -1,7 +1,7 @@
 def sumaTodos(limitTo):
-    sumaTotal = 0
+    resultados = 0
     for i in range (1,limitTo+1):
-        sumaTotal += i
-    return sumaTotal
+        resultados += i
+    return resultados
 
 print(sumaTodos(5))
