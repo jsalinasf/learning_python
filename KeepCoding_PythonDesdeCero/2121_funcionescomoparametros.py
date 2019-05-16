@@ -1,3 +1,6 @@
+# Funciones de Primer Nivel
+# aceptan funciones como parametros de Entrada
+
 def normal(x):
     return x
 
