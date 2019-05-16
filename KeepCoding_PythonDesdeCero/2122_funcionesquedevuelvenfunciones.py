@@ -1,3 +1,8 @@
+# Una funcion es de nivel superior si:
+#   Recibe una funcion como parametro o
+#   Retorna una funcion como resultado de la funcion o
+#   Todas las anteriores
+
 def myMax(*l):
     if len(l) == 0:
         return 0
