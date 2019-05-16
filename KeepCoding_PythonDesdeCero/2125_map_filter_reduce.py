@@ -49,7 +49,8 @@ print(list(myListEven2)) # Imprime solo 4, 6, 8, 0, los demas items de myListEve
 ########################################################################################
 # REDUCE
 # Aplica una funcion al conjunto de datos de origen y produce un SOLO resultado con dichos items
-# 
+# OJO: Si queremos que el reduce utilice en la funcion tambien el primer elemento, vamos a necesitar
+# sacar una copia de la lista, insertar en la psocion 0 un valor neutro y ahi si llamar a reduce
 #########################################################################################
 
 from functools import reduce
