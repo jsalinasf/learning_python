@@ -27,9 +27,8 @@ class Circuito():
     def stopscreen(self):
         self.__screen.exitonclick()
     
-    def competir():
+    def competir(self):
         pass
-
 
 
 if __name__ == '__main__':
