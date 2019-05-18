@@ -1,7 +1,9 @@
 import turtle
+import random
 
 class Circuito():
 
+    # No todos los atributos deben ser definidos en el constructor
     corredores = []
     __posStartY = (-30, -10, 10, 30)
     __colorTurtle = ('red', 'blue', 'orange', 'green')
@@ -28,11 +30,25 @@ class Circuito():
         self.__screen.exitonclick()
     
     def competir(self):
-        pass
+        
+        hayGanador = False
+
+        while not hayGanador:
+            for tortuga in self.corredores:
+                avance = random.randint(1,10)
+                tortuga.forward(avance)
+                if tortuga.position()[0] >= self.__finishLine:
+                    hayGanador = True
+                    print('Winner is Turtle {}'.format(tortuga.color()[0]))
+                    break
+                    
+
 
 
 if __name__ == '__main__':
     circuito = Circuito(640, 480)
+    
+    circuito.competir()
     circuito.stopscreen()
 
 
