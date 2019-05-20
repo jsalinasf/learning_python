@@ -1,27 +1,60 @@
-import pygame
-import sys
+import pygame, sys, random
+
+class Runner():
+
+    __custome = ('turtle', 'fish', 'prawn', 'moray', 'octupus')
+    def __init__(self, x=0, y=0, custome='turtle'):
+        self.custome = pygame.image.load('images/{}.png'.format(custome))
+        self.position = [x, y]
+        self.name = custome
+    
+    def avanzar(self):
+        self.position[0] += random.randint(1,3)
+
 
 class Game():
     
-    corredores = []
+    runners = []
+    __posY = (160, 200, 240, 280)
+    __names = ('Speedy', 'Lucera', 'Alonso', 'Flash')
+    __startLine = 0
+    __finishLine = 620
 
     def __init__(self):
         self.__screen = pygame.display.set_mode((640, 480))
-        pygame.display.set_caption('Carrera de Bichos')
+        pygame.display.set_caption('Run little Turtle... Run!')
         self.background = pygame.image.load('images/background.png')
+        
+        for i in range(4):
+            theRunner = Runner(self.__startLine, self.__posY[i])
+            theRunner.name = self.__names[i]
+            self.runners.append(theRunner)    
 
     def competir(self):
-
-        while True:
+        gameOver = False
+        while not gameOver:
             # comprobar eventos
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                    pygame.quit()
-                    sys.exit()
+                    gameOver = True          
             
-            # refrescar y renderizar pantalla
+            for runner in self.runners:
+                runner.avanzar()
+                # Comprobar si hay ganador
+                if runner.position[0] >= self.__finishLine:
+                    gameOver = True
+                    print('{} ha gando!'.format(runner.name))
+
+            # Actualizar Objetos
             self.__screen.blit(self.background, (0, 0))
+            for runner in self.runners:
+                self.__screen.blit(runner.custome, runner.position)
+            
+            # Presentar Pantalla con objetos actualizados
             pygame.display.flip()
+        
+        pygame.quit()
+        sys.exit()
 
 if __name__ == '__main__':
     pygame.init()
