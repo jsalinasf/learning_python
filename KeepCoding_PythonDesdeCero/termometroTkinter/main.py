@@ -8,9 +8,12 @@ class mainApp():
         self.root.geometry('640x480')
         self.root.title('Mi Ventana')
         self.root.configure(bg = 'lightgreen')
+    
+    def start(self):
+        self.root.mainloop()
 
 if __name__ == '__main__':
     app = mainApp()
-    app.root.mainloop()
+    app.start()
 
 
